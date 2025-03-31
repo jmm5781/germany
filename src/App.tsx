@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const WeimarRepublicQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
-  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [showExplanation, setShowExplanation] = useState(false);
 
   const questions = [
@@ -210,7 +210,7 @@ const WeimarRepublicQuiz = () => {
     }
   ];
 
-  const handleAnswerClick = (selectedOption) => {
+  const handleAnswerClick = (selectedOption: number) => {
     setSelectedAnswer(selectedOption);
     setShowExplanation(true);
     
