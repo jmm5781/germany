@@ -6,13 +6,17 @@ import NaziRiseQuiz from './quizzes/NaziRiseQuiz';
 export default function App() {
   return (
     <div className="max-w-3xl mx-auto p-6 text-center">
-      <h1 className="text-3xl font-bold mb-8">Germany Quiz Hub</h1>
+      <h1 className="text-3xl font-bold mb-8">Mom's Germany Quiz Hub</h1>
 
       <Routes>
         <Route
           path="/"
           element={
             <div className="space-y-4">
+              <img src="/dogs-landing.jpg"
+                alt="Illustration of two dogs"
+                className="mx-auto mb-6 rounded-lg shadow-md w-full max-w-md"
+              />
               <p className="text-lg">Select a quiz:</p>
               <div className="space-y-2">
                 <Link
